@@ -75,9 +75,9 @@
         let url
         let isHttps = 'https:' === document.location.protocol;
         if (isHttps) {
-          url = 'wss://10.71.29.182:' + this.loginForm.port + '/ws/' + this.loginForm.userId
+          url = 'wss://127.0.0.1:' + this.loginForm.port + '/ws/' + this.loginForm.userId
         } else {
-          url = 'ws://10.71.29.182:' + this.loginForm.port + '/ws/' + this.loginForm.userId
+          url = 'ws://127.0.0.1:' + this.loginForm.port + '/ws/' + this.loginForm.userId
         }
         this.websocket = new WebSocket(url);
         console.log("websocket连接成功")
